@@ -1,37 +1,31 @@
 import React from 'react';
-import {
-  FlatList,
-  StyleSheet,
-  View
-} from 'react-native';
+import {FlatList, StyleSheet, View} from 'react-native';
 
 import {house} from './db';
-import Item from './components/Item'
+import Item from './components/Item';
 
 const App = () => {
-  
   return (
-    <View style={styles.container} >
-      <FlatList 
+    <View style={styles.container}>
+      <FlatList
         style={styles.list}
         data={house}
-        renderItem={ ({item}) => <Item item={item}/>}
-        keyExtractor={(item) => item.id}
+        renderItem={({item}) => <Item item={item} />}
+        keyExtractor={item => item.id}
       />
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  container:{
+  container: {
     flex: 1,
-    width: "100%",
-    backgroundColor: "#f1f1f1"
+    width: '100%',
+    backgroundColor: '#f1f1f1',
   },
-  list:{
-    marginHorizontal: "2.5%",
-   
-  }
+  list: {
+    marginHorizontal: '2.5%',
+  },
 });
 
 export default App;
