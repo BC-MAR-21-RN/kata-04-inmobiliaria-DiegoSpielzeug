@@ -28,16 +28,6 @@ export const house = [
         squareFeet: 450,
         price: 123,
         img: require('./img/casa3.jpg')
-    },
-    {
-        id: 4,
-        name: 'Corner House',
-        location: '2343 W. Schwartz',
-        beds: 1,
-        bathrooms: 1,
-        squareFeet: 450,
-        price: 123,
-        img: require('./img/casa3.jpg')
     }
   ];
 

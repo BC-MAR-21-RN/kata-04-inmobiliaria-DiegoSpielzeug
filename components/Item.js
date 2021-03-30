@@ -2,9 +2,6 @@ import React from 'react';
 import {View, Text,Image} from 'react-native'
 
 import Marker from 'react-native-vector-icons/FontAwesome';
-import Home from 'react-native-vector-icons/FontAwesome';
-import Bed from 'react-native-vector-icons/FontAwesome';
-import Bath from 'react-native-vector-icons/FontAwesome';
 import Heart from 'react-native-vector-icons/FontAwesome';
 
 import InfoInside from './InfoInside';
