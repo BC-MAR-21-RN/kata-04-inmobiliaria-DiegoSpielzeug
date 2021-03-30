@@ -4,11 +4,13 @@ export const styles = StyleSheet.create({
     containter:{
         padding: 10,
         backgroundColor: "#f5fdff",
-        flexDirection: "row"
+        flexDirection: "row",
+        marginBottom: 5
+
     },
     img:{
-        height: 100,
-        width: 110
+        height: 110,
+        width: 120
     },
     info:{
         paddingLeft: 10,
@@ -16,7 +18,8 @@ export const styles = StyleSheet.create({
     },
     name:{
         fontSize: 20,
-        color: "black"
+        color: "black",
+        fontWeight: "bold"
     },
     location:{
         flexDirection:"row",
@@ -46,15 +49,17 @@ export const styles = StyleSheet.create({
         borderRadius: 20
     },
     text:{
-        color: "blue",
-        fontSize: 12
+        color:"black",
+        fontSize: 15,
     },
     text_price:{
         color: "black",
-        fontWeight: "bold"
+        fontWeight: "bold",
+        fontSize: 20
     },
     icon:{
         color:"black",
-        marginRight: 7
+        marginRight: 7,
+        fontSize: 15
     }
 });

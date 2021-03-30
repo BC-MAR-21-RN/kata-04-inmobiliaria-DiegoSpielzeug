@@ -17,7 +17,7 @@ const Item = ({item}) => {
 
                 <View style={styles.location}>
                     <Marker name="map-marker" style={styles.icon}/>
-                    <Text>{item.location}</Text>
+                    <Text style={styles.text}>{item.location}</Text>
                 </View>
 
                 <InfoInside item={item}/>

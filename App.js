@@ -11,8 +11,9 @@ import Item from './components/Item'
 const App = () => {
   
   return (
-    <View style={styles.container}>
+    <View style={styles.container} >
       <FlatList 
+        style={styles.list}
         data={house}
         renderItem={ ({item}) => <Item item={item}/>}
         keyExtractor={(item) => item.id}
@@ -24,11 +25,12 @@ const App = () => {
 const styles = StyleSheet.create({
   container:{
     flex: 1,
-    width: "95%",
-    justifyContent: "center"
+    width: "100%",
+    backgroundColor: "#f1f1f1"
   },
-  text:{
-    color: 'black'
+  list:{
+    marginHorizontal: "2.5%",
+   
   }
 });
 
